@@ -419,15 +419,17 @@
     #topics { padding-top: calc(var(--nav-h) + 4rem); }
     .topics-list { margin-top: 2.5rem; }
     .topic-item {
-      display: flex; align-items: baseline; gap: 1.5rem;
-      padding: 1.2rem 0;
-      border-bottom: 1px solid var(--border);
-      text-decoration: none;
-      color: var(--text);
-      transition: color .2s;
+    display: flex; align-items: baseline; gap: 1.5rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--text);
+    transition: color .2s;
     }
     .topic-item:first-child { border-top: 1px solid var(--border); }
     .topic-item:hover { color: var(--accent); }
+    .topic-item:visited { color: var(--text); }
+    .topic-item:visited .topic-date { color: var(--accent); }
     .topic-date {
       font-family: 'Cormorant Garamond', serif;
       font-size: .9rem;
